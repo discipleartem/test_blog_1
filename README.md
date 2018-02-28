@@ -7,6 +7,8 @@
 1) Запуск встроенного веб сервера Python 3 на Linux:
     python3 -m http.server --cgi
 
+    http://localhost:8000
+
 Для сидящих на Windows чуть проще будет запуск Python файла
 
     from http.server import HTTPServer, CGIHTTPRequestHandler
