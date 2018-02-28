@@ -21,5 +21,13 @@
 
 Открываем localhost:8000 и видим содержимое папки проекта.При создании новых файлов мне не пришлось перегружать веб сервер
 
-Часть 3: Пример приложения
-https://pythonworld.ru/web/cgi-3.html
+У кого проблемы с кодировкой вставляем вверху:
+
+    # установка кодировки UTF-8
+    import sys
+    import codecs
+    sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+
+
+Часть 4: Публикация в сети Интернет
+https://pythonworld.ru/web/cgi-4.html

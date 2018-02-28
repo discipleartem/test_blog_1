@@ -6,6 +6,12 @@ import html
 import http.cookies
 import os
 
+# установка кодировки UTF-8
+import sys
+import codecs
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+
+
 from _wall import Wall
 wall = Wall()
 
