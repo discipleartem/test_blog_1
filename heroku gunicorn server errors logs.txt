@@ -1,0 +1,84 @@
+
+C:\Users\User> heroku logs --app
+2018-03-08T12:51:56.335324+00:00 heroku[router]: - at=error code=H14 desc="No web processes running" method=GET path="/" host=aqueous-
+bayou-99527.herokuapp.com request_id=84dfaf22-3311-4365-a798-29874f69b632 fwd="176.37.205.48" dyno= connect= service= status=503 bytes
+= protocol=https
+2018-03-08T12:51:57.594561+00:00 heroku[router]: - at=error code=H14 desc="No web processes running" method=GET path="/favicon.ico" ho
+st=aqueous-bayou-99527.herokuapp.com request_id=480d78bf-acda-4d74-9da3-31e9fc8cb98b fwd="176.37.205.48" dyno= connect= service= statu
+s=503 bytes= protocol=https
+2018-03-08T13:02:49.710121+00:00 heroku[web.1]: - Starting process with command `gunicorn app:app`
+2018-03-08T13:02:52.125674+00:00 heroku[web.1]: - Process exited with status 127
+2018-03-08T13:02:52.011756+00:00 app[web.1]: - bash: gunicorn: command not found
+2018-03-08T13:02:52.595806+00:00 heroku[web.1]: - State changed from starting to crashed
+2018-03-08T13:02:52.598187+00:00 heroku[web.1]: - State changed from crashed to starting
+2018-03-08T13:02:55.651516+00:00 heroku[web.1]: - Starting process with command `gunicorn app:app`
+2018-03-08T13:02:57.131540+00:00 heroku[web.1]: - Process exited with status 127
+2018-03-08T13:02:57.090981+00:00 app[web.1]: - bash: gunicorn: command not found
+2018-03-08T13:02:57.150082+00:00 heroku[web.1]: - State changed from starting to crashed
+2018-03-08T13:03:25.437862+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=abef7e28-6013-46e0-a34e-f92caddd654b fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:03:25.991004+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=ff0d5f84-b4f1-4ae7-b854-f88e67e57efb fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:03:28.056206+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=bbe61553-fa91-4e24-8781-2997974d272e fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:03:28.536492+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=37e50f6f-4389-4269-88d8-81053adb9000 fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:03:50.030451+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=36be2cba-a6c4-4210-9e6f-42f3f29d2b9b fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:03:50.842880+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=5b9393db-71b1-41c2-9592-9843cc37c4b0 fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:07:56.822192+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=7263e4ac-6b32-41cc-953f-1f931ad7a9b4 fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:07:57.625504+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=b2905d56-6019-4574-bb0d-b738321adb90 fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:32:57.655149+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=4e3de8a5-f804-480e-83ce-35eead9cc865 fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:32:58.412109+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=0ac23b0e-06e6-48e8-aa98-0c455e9ce5bc fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:32:59.380733+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=08496799-0970-4009-bb10-d72b3cc90448 fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:32:59.897207+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=02409269-73e3-4d90-905a-19fd14588457 fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:33:31.947267+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=eeadbd41-b8aa-42c9-8db4-6cd387b4ac0e fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:33:32.521379+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=088f58c5-c212-4625-924c-b79aaec310b4 fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T13:51:21.224085+00:00 heroku[web.1]: - State changed from crashed to starting
+2018-03-08T13:51:25.826520+00:00 heroku[web.1]: - Starting process with command `gunicorn app:app`
+2018-03-08T13:51:28.164708+00:00 heroku[web.1]: - State changed from starting to crashed
+2018-03-08T13:51:28.140968+00:00 heroku[web.1]: - Process exited with status 127
+2018-03-08T13:51:28.072581+00:00 app[web.1]: - bash: gunicorn: command not found
+2018-03-08T13:52:59.952047+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=dfe60e64-b28e-4e00-b72e-fdb8074c0d36 fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:58:42.704075+00:00 heroku[web.1]: - State changed from crashed to starting
+2018-03-08T13:58:46.551543+00:00 heroku[web.1]: - Starting process with command `gunicorn app:app`
+2018-03-08T13:58:48.321182+00:00 heroku[web.1]: - Process exited with status 127
+2018-03-08T13:58:48.338968+00:00 heroku[web.1]: - State changed from starting to crashed
+2018-03-08T13:58:48.280532+00:00 app[web.1]: - bash: gunicorn: command not found
+2018-03-08T13:59:41.792094+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=eb0bda6d-1eb5-49bb-a35f-4db8f47c9c21 fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T13:59:42.708349+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=37de9151-4c7f-4b76-9d1b-8cbe905cd3af fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
+2018-03-08T14:24:25.242857+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/" host=aqueous-bayou-99527.h
+erokuapp.com request_id=48f54d6e-e14c-4bb9-89e0-a1380e63251f fwd="176.37.205.48" dyno= connect= service= status=503 bytes= protocol=ht
+tps
+2018-03-08T14:24:25.849276+00:00 heroku[router]: - at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=aqueous-ba
+you-99527.herokuapp.com request_id=9c830b3b-1e66-45c2-9406-93293f9fbe18 fwd="176.37.205.48" dyno= connect= service= status=503 bytes=
+protocol=https
