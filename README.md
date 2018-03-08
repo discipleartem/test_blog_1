@@ -31,3 +31,16 @@
 
 Часть 4: Публикация в сети Интернет
 https://pythonworld.ru/web/cgi-4.html
+
+Я использовал heroku хостинг.
+Для успешного деплоя нужно создать 2 файла:
+https://devcenter.heroku.com/articles/python-support
+
+runtime.txt
+    python-3.6.4
+
+Pipfile
+    [requires]
+    python_full_version = "python-3.6.4"
+
+и Гайд по деплою https://devcenter.heroku.com/articles/getting-started-with-python#introduction
