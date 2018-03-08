@@ -43,4 +43,22 @@ Pipfile
     [requires]
     python_full_version = "python-3.6.4"
 
+Procfile
+    web: gunicorn app:app
+
 и Гайд по деплою https://devcenter.heroku.com/articles/getting-started-with-python#introduction
+
+доп. настройки для gunicorn
+https://devcenter.heroku.com/articles/python-gunicorn
+
+в консоле heroku
+    pip install pipenv
+    pip install gunicorn
+
+у себя в bash консоле от git-bash.exe
+   pip freeze --local  #просмотр зависимостей
+   pip freeze > requirements.txt #запись в файл
+
+в файл requirements.txt добавить строку
+
+gunicorn==19.7.1  #версию мы узнали при установке
