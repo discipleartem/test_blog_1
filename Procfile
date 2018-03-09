@@ -1,2 +1,2 @@
 web: gunicorn app:app
-web: python index.html runserver 0.0.0.0:$PORT
+web: python cgi-bin/wall.py runserver 0.0.0.0:$PORT
