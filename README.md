@@ -9,12 +9,21 @@
 
     http://localhost:8000
 
-Для сидящих на Windows чуть проще будет запуск Python файла
+Для сидящих на Windows проще будет запустить Python файл (мною немного поправленный)
+
+    import os, sys
 
     from http.server import HTTPServer, CGIHTTPRequestHandler
-    server_address = ("", 8000)
-    httpd = HTTPServer(server_address, CGIHTTPRequestHandler)
-    httpd.serve_forever()
+    # Путь до корня, где лежит cgi-bin
+    webdir = r'D:\путь_к_папке_проекта'
+    port = 8000
+    # Переходим в корневую директорию
+    os.chdir(webdir)
+    #localhost у нас по адресу 127.0.0.1
+    srvaddr = ('127.0.0.1', port)
+    srvrobj = HTTPServer(srvaddr, CGIHTTPRequestHandler)
+    srvrobj.serve_forever()
+
 
 командная строка windows у меня выеживалась и мне пришлось использовать программу "git-bash.exe"
 чтобы перейти в каталог и запустить скрипт на запуск сервера
