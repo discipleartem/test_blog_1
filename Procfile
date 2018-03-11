@@ -1,1 +1,1 @@
-web: gunicorn index:test_blog_1
+web: gunicorn test_blog_1:index.html

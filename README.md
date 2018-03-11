@@ -53,14 +53,15 @@ Pipfile
     python_full_version = "python-3.6.4"
 
 Procfile
-    #web: gunicorn cgi-bin:app
-    #web: python index.html runserver 0.0.0.0:$PORT
+    # web: gunicorn cgi-bin:app
+    # web: python index.html runserver 0.0.0.0:$PORT
 
-    #web: gunicorn --pythonpath <directory_containing_package> <package>.<module>
+    # web: gunicorn --pythonpath <directory_containing_package> <package>.<module>
 
-    web: gunicorn --pythonpath test_blog_1
+    # web: gunicorn --pythonpath test_blog_1
 
-    #176.37.205.48 runserver 0.0.0.0:5180
+    # 176.37.205.48 runserver 0.0.0.0:5180
+    # web: gunicorn hello:app
 
 и Гайд по деплою https://devcenter.heroku.com/articles/getting-started-with-python#introduction
 
