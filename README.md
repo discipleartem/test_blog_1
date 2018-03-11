@@ -60,6 +60,7 @@ Procfile
 
     web: gunicorn --pythonpath test_blog_1
 
+    #176.37.205.48 runserver 0.0.0.0:5180
 
 и Гайд по деплою https://devcenter.heroku.com/articles/getting-started-with-python#introduction
 
