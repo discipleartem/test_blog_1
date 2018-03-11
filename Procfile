@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath test_blog_1
+web: gunicorn --pythonpath .
