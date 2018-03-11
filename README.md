@@ -62,6 +62,7 @@ Procfile
 
     # 176.37.205.48 runserver 0.0.0.0:5180
     # web: gunicorn hello:app
+    # gunicorn = gunicorn -w 3 test:app
 
 и Гайд по деплою https://devcenter.heroku.com/articles/getting-started-with-python#introduction
 
@@ -105,10 +106,10 @@ heroku ps:scale web=1 --app aqueous-bayou-99527
     $ heroku ps:scale web=1
 
 5) смотрим логи
- heroku logs --tail --app aqueous-bayou-99527
+    $heroku logs --app aqueous-bayou-99527
 
 для обновления репозитория на heroku
-git pull git@github.com:discipleartem/test_blog_1.git
+$ git pull git@github.com:discipleartem/test_blog_1.git
 
     сначала нужно перейти в папку с клонированым проэктом
     cd test_blog_1
