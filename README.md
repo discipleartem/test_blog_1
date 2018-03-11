@@ -81,6 +81,31 @@ heroku ps:scale web=1 --app aqueous-bayou-99527
 смотрим логи
  heroku logs --tail --app aqueous-bayou-99527
 
+Деплой:
+
+1) клонируем git
+    $ git clone https://github.com/heroku/python-getting-started.git
+    $ cd python-getting-started
+
+2) создаем новое имя для приложения
+    $ heroku create
+
+3) самая главная команда
+    $ git push heroku master
+
+4) проверяем инстанс
+    $ heroku ps:scale web=1
+
+5) смотрим логи
+ heroku logs --tail --app aqueous-bayou-99527
+
+для обновления репозитория на heroku
+git pull git@github.com:discipleartem/test_blog_1.git
+
+    сначала нужно перейти в папку с клонированым проэктом
+    cd test_blog_1
+
+
 Define a Procfile ?
 https://devcenter.heroku.com/articles/getting-started-with-python#define-a-procfile
 
