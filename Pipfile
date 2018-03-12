@@ -2,4 +2,4 @@
 python_full_version = "python-3.6.4"
 
 [packages]
-gunicorn= "19.7.1"
+gunicorn = "19.7.1"
