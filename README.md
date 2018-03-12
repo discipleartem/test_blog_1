@@ -52,6 +52,9 @@ Pipfile
     [requires]
     python_full_version = "python-3.6.4"
 
+    или
+    python_version = "3.6"
+
 requirements.txt
     pew==1.1.2
     pipenv==11.1.4
