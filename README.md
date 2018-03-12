@@ -52,6 +52,14 @@ Pipfile
     [requires]
     python_full_version = "python-3.6.4"
 
+requirements.txt
+    pew==1.1.2
+    pipenv==11.1.4
+    psutil==5.4.3
+    virtualenv==15.1.0
+    virtualenv-clone==0.3.0
+    gunicorn==19.7.1
+
 Procfile
     # web: gunicorn cgi-bin:app
     # web: python index.html runserver 0.0.0.0:$PORT
@@ -117,7 +125,7 @@ heroku ps:scale web=1 --app aqueous-bayou-99527
     $ heroku ps:scale web=1
 
 5) смотрим логи
-    $heroku logs --app aqueous-bayou-99527
+    $ heroku logs --app aqueous-bayou-99527
 
 для обновления репозитория на heroku
 $ git pull git@github.com:discipleartem/test_blog_1.git
