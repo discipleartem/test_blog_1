@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath index.html
+gunicorn --workers=2 wsgi:index.html
