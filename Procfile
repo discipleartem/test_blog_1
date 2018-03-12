@@ -1,1 +1,1 @@
-web: gunicorn --workers=2 index.html:wsgi
+web: gunicorn index.html:app
