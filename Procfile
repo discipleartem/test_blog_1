@@ -1,1 +1,1 @@
-web: gunicorn -w 3 wsgi.py
+web: python index.html
