@@ -66,9 +66,14 @@ Procfile
 
     # gunicorn = gunicorn -w 3 test:app
 
-    #web: gunicorn
-    #gunicorn = gunicorn -w 3 app:app
+    # web: gunicorn
+    # gunicorn = gunicorn -w 3 app:app
+----------------------------------------------------
+    # web: gunicorn <main-routing-python>:app
 
+    # web: python main.py --port=$PORT
+
+    # web: gunicorn gettingstarted.wsgi --log-file -
 
 и Гайд по деплою https://devcenter.heroku.com/articles/getting-started-with-python#introduction
 
