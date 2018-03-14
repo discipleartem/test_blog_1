@@ -52,8 +52,7 @@ Pipfile
     [requires]
     python_full_version = "python-3.6.4"
 
-    или
-    python_version = "3.6"
+    #или python_version = "3.6"
 
 requirements.txt
     pew==1.1.2
@@ -79,7 +78,7 @@ Procfile
 
     # web: gunicorn
     # gunicorn = gunicorn -w 3 app:app
-----------------------------------------------------
+
     # web: gunicorn <main-routing-python>:app
 
     # web: python main.py --port=$PORT
@@ -96,8 +95,8 @@ https://devcenter.heroku.com/articles/python-gunicorn
     pip install gunicorn
 
 у себя в bash консоле от git-bash.exe
-   pip freeze --local  #просмотр зависимостей
-   pip freeze > requirements.txt #запись в файл
+   pip freeze --local             #просмотр зависимостей
+   pip freeze > requirements.txt  #запись в файл
 
 в файл requirements.txt добавить строку
 
@@ -107,10 +106,10 @@ gunicorn==19.7.1  #версию мы узнали при установке
 heroku ps:scale web=1 --app aqueous-bayou-99527
 
 чтобы открыть
- heroku open --app aqueous-bayou-99527
+ heroku open --app имя_прилаги_на_хероку
 
 смотрим логи
- heroku logs --tail --app aqueous-bayou-99527
+ heroku logs --tail --app имя_прилаги_на_хероку
 
 Деплой:
 
@@ -128,10 +127,10 @@ heroku ps:scale web=1 --app aqueous-bayou-99527
     $ heroku ps:scale web=1
 
 5) смотрим логи
-    $ heroku logs --app aqueous-bayou-99527
+    $ heroku logs --app имя_прилаги_на_хероку
 
 для обновления репозитория на heroku
-$ git pull git@github.com:discipleartem/test_blog_1.git
+$ git pull git@github.com:heroku/python-getting-started.git
 
     сначала нужно перейти в папку с клонированым проэктом
     cd test_blog_1
@@ -142,5 +141,10 @@ https://devcenter.heroku.com/articles/getting-started-with-python#define-a-procf
 
 https://dashboard.heroku.com/apps
 
-Вопрос о деплое на https://ru.stackoverflow.com
-https://ru.stackoverflow.com/questions/795328/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-gunicorn-%D0%BD%D0%B0-heroku-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3%D0%B5-at-error-code-h14-desc-no-web-processes-r
+Вопрос о gunicorn и Procfile
+
+https://ru.stackoverflow.com/questions/795328/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-gunicorn-%D0%BD%D0%B0-heroku-%D1%85%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B3%D0%B5-gunicorn-appapp-herokuweb-1-state-ch
+
+https://stackoverflow.com/questions/49276901/gunicorn-appapp-herokuweb-1-state-changed-from-starting-to-crashed?noredirect=1#comment85556484_49276901
+
+Експерты говорят о том что автор туторитала чего-то не дописал и настройка Procfile ничего не решит
